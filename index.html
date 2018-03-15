@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Wind of Buri compilations player app">
+    <base href="/">
+    <title>Wind of Buri</title>
+    <script defer src="main.dart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-115816221-1', 'auto');
+        ga('require', 'mediaQueryTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'pageVisibilityTracker');
+        ga('require', 'urlChangeTracker');
+
+        ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://unpkg.com/autotrack@2.4.1/autotrack.js"></script>
+</head>
+<body>
+<section class="hero is-info is-fullheight">
+    <w-app>
+        <div class="modal is-active">
+
+            <div class="modal-content" style="width: 100px !important">
+                <div class="levels is-vcentered">
+                    <div class="level-item">
+                        <a class="button is-text is-loading has-color-white">
+
+                        </a></div>
+                        <div class="level-item">
+                            Loading...
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </w-app>
+</section>
+</body>
+</html>
