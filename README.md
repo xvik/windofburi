@@ -1,6 +1,6 @@
 # Wind Of Buri music player
 
-This repository is a deployment source for https://windofburi.netlify.com/ site.
+This repository is a deployment source for https://windofburi.space/ site.
 
 ## Feedback
 
