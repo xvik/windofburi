@@ -1,34 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css);
 @import url(https://unpkg.com/bulma-quickview@1.0.1/dist/bulma-quickview.min.css);
-body {
-  background-color: black;
-}
-
 * {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
-.hero.is-info {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("img/milky-way-1023340_1280.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-@media screen and (min-width: 1280px) {
-  .hero.is-info {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("img/milky-way-1023340_1920.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-}
 .hero .nav, .hero.is-success .nav {
   -webkit-box-shadow: none;
   box-shadow: none;

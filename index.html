@@ -4,9 +4,39 @@
     <meta name="Description" content="Wind of Buri compilations player app">
     <base href="/">
     <title>Wind of Buri</title>
-    <script defer="" src="main.dart.js"></script>
-    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .hero.is-info {
+            background-color: black;
+            background: linear-gradient(
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.5)
+            ), url('img/milky-way-1023340_1280.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;background-size: cover;
+            background-attachment: fixed;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .hero.is-info {
+                background-color: black;
+                background: linear-gradient(
+                        rgba(0, 0, 0, 0.2),
+                        rgba(0, 0, 0, 0.5)
+                ), url('img/milky-way-1023340_1920.jpg') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+    </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -17,16 +47,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-115816221-1', 'auto');
-        ga('require', 'mediaQueryTracker');
-        ga('require', 'outboundLinkTracker');
-        ga('require', 'pageVisibilityTracker');
-        ga('require', 'urlChangeTracker');
+    <script defer="" src="main.dart.js"></script>
+    
 
-        ga('send', 'pageview');
-    </script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://unpkg.com/autotrack@2.4.1/autotrack.js"></script>
 </head>
@@ -41,15 +64,45 @@
                         <a class="button is-text is-loading has-color-white">
 
                         </a></div>
-                        <div class="level-item">
-                            Loading...
-                        </div>
+                    <div class="level-item">
+                        Loading...
+                    </div>
                 </div>
             </div>
 
         </div>
     </w-app>
 </section>
+
+<noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</noscript>
+<script>
+    var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+
+
+    window.ga = window.ga || function () {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-115816221-1', 'auto');
+    ga('require', 'mediaQueryTracker');
+    ga('require', 'outboundLinkTracker');
+    ga('require', 'pageVisibilityTracker');
+    ga('require', 'urlChangeTracker');
+
+    ga('send', 'pageview');
+</script>
 
 
 </body></html>
